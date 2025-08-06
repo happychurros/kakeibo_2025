@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    
+    background-color: #fff0f5;
+    background-image: radial-gradient(#ffdbe5 15%, transparent 16%);
+    background-size: 20px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #f08080;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+label {
+    color: #555;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+input[type="number"],
+input[type="date"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1em;
+    background-color: #fff9fb;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #ffb6c1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 182, 193, 0.6);
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #ff9a9e;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1em;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #f67272;
+    box-shadow: 0 4px 15px rgba(246, 114, 114, 0.4);
+    transform: translateY(-3px);
+}
+
+.amount-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: -12px;
+    margin-bottom: 24px;
+}
+
+.add-amount-btn {
+    flex-grow: 1;
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border: 1px solid #bbdefb;
+    border-radius: 8px;
+    padding: 8px 0;
+    font-size: 0.9em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-amount-btn:hover {
+    background-color: #bbdefb;
+    transform: translateY(-2px);
+}
