@@ -31,9 +31,9 @@ body::before {
 
     background: linear-gradient(
         135deg,
-        #d7f1fc,
-        #ede0f9,
-        #fde3e3
+        #d1f1ff,
+        #ead4ff,
+        #ffdde3
     );
 
     background-size: 400% 400%;
@@ -67,7 +67,7 @@ form {
 
 h1 {
     text-align: center;
-    color: #f080a3;
+    color: #fe88ad;
     font-weight: 700;
     margin-bottom: 25px;
     font-size: 2.2em;
@@ -75,15 +75,12 @@ h1 {
 }
 
 label {
-    color: #555;
+    color: #716267;
     font-weight: 700;
-    font-size: 0.9em;
+    font-size: 0.95em;
 }
 
-input[type="number"],
-input[type="date"],
-input[type="text"],
-select {
+input[type="number"], input[type="date"], input[type="text"], select {
     width: 100%;
     padding: 12px;
     margin-top: 6px;
@@ -93,12 +90,12 @@ select {
     box-sizing: border-box;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 1em;
+    font-weight: 550;
     background-color: #fff9fb;
     transition: all 0.3s ease;
 }
 
-input:focus,
-select:focus {
+input:focus, select:focus {
     border-color: #ffb6c1;
     outline: none;
     box-shadow: 0 0 8px rgba(255, 182, 193, 0.6);
@@ -106,7 +103,7 @@ select:focus {
 
 input[type="submit"] {
     width: 100%;
-    background-color: #ff9a9e;
+    background-color: #ff9ab3;
     color: white;
     font-weight: 700;
     font-size: 1.1em;
@@ -119,7 +116,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #f67272;
+    background-color: #f6728c;
     box-shadow: 0 4px 15px rgba(246, 114, 114, 0.4);
     transform: translateY(-3px);
 }
@@ -149,4 +146,21 @@ input[type="submit"]:hover {
 .add-amount-btn:hover {
     background-color: #bbdefb;
     transform: translateY(-2px);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff9a9e'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 24px 24px;
+    padding-right: 40px;
+}
+
+label .fa-solid {
+    margin-right: 8px;
+    color: #fe88ad;
 }
