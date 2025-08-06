@@ -2,16 +2,13 @@
 
 body {
     position: relative;
-
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    
     background-color: #fff0f5;
     background-image:
       radial-gradient(#fbcfdc 15%, transparent 16%),
       radial-gradient(#fbcfdc 15%, transparent 16%);
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,18 +25,15 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-
     background: linear-gradient(
         135deg,
         #d1f1ff,
         #ead4ff,
         #ffdde3
     );
-
     background-size: 400% 400%;
     opacity: 0.6;
     z-index: -1;
-    
     animation: gradient-animation 15s ease infinite;
 }
 
@@ -89,6 +83,7 @@ input[type="number"], input[type="date"], input[type="text"], select {
     border-radius: 10px;
     box-sizing: border-box;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #3b3336;
     font-size: 1em;
     font-weight: 550;
     background-color: #fff9fb;
@@ -102,6 +97,7 @@ input:focus, select:focus {
 }
 
 input[type="submit"] {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     width: 100%;
     background-color: #ff9ab3;
     color: white;
@@ -116,7 +112,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #f6728c;
+    background-color: #f67e96;
     box-shadow: 0 4px 15px rgba(246, 114, 114, 0.4);
     transform: translateY(-3px);
 }
@@ -163,4 +159,31 @@ select {
 label .fa-solid {
     margin-right: 8px;
     color: #fe88ad;
+    width: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.sheet-link-container {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.sheet-link-container a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sheet-link-container a .fa-solid {
+    font-size: 38px;
+    color: #ff9ab3;
+    font-weight: 900;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sheet-link-container a:hover .fa-solid {
+    color: #f67e96;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(246, 114, 114, 0.4);
 }
