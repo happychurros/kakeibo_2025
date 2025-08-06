@@ -187,17 +187,3 @@ label .fa-solid {
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(246, 114, 114, 0.4);
 }
-
-@media (max-width: 600px) {
-    body {
-        padding: 20px 15px; 
-    }
-
-    form {
-        padding: 30px 25px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-}
