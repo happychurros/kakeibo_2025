@@ -6,12 +6,14 @@
     <title>家計簿送信フォーム（2025年度）</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <h1>家計簿送信フォーム</h1>
 
     <form>
-        <label for="month">何月分の収支ですか</label>
+        <label for="month"><i class="fa-solid fa-calendar"></i>何月分の収支ですか</label>
         <select id="month" name="month">
             <option value="4月">4月</option>
             <option value="5月">5月</option>
@@ -27,7 +29,7 @@
             <option value="3月">3月</option>
         </select>
 
-        <label for="category">どの項目に該当しますか</label>
+        <label for="category"><i class="fa-solid fa-list"></i>どの項目に該当しますか</label>
         <select id="category" name="category">
             <option value="食費">食費</option>
             <option value="日用品費">日用品費</option>
@@ -38,7 +40,7 @@
             <option value="収入">収入</option>
         </select>
 
-        <label for="amount">金額はいくらですか</label>
+        <label for="amount"><i class="fa-solid fa-yen-sign"></i>金額はいくらですか</label>
         <input type="number" id="amount" name="amount">
         <div class="amount-buttons">
             <button type="button" class="add-amount-btn" data-value="10000">+10,000</button>
@@ -46,13 +48,13 @@
             <button type="button" class="add-amount-btn" data-value="100">+100</button>
         </div>
 
-        <label for="date">いつ発生しましたか</label>
+        <label for="date"><i class="fa-solid fa-calendar-days"></i>いつ発生しましたか</label>
         <input type="date" id="date" name="date">
 
-        <label for="memo">購入場所や目的等</label>
+        <label for="memo"><i class="fa-solid fa-shop"></i>購入場所や目的</label>
         <input type="text" id="details" name="details">
 
-        <label for="payer">誰が立て替えましたか</label>
+        <label for="payer"><i class="fa-solid fa-user"></i>誰が立て替えましたか</label>
         <select id="payer" name="payer">
             <option value=""></option>
             <option value="貴裕">貴裕</option>
