@@ -30,7 +30,8 @@ h1 {
     text-align: center;
     color: #f08080;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    font-size: 2.2em;
 }
 
 label {
