@@ -63,6 +63,7 @@ h1 {
     text-align: center;
     color: #fe88ad;
     font-weight: 700;
+    margin-top: 0;
     margin-bottom: 25px;
     font-size: 2.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
@@ -200,6 +201,6 @@ label .fa-solid {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 }
