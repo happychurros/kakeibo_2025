@@ -91,6 +91,7 @@ input[type="number"], input[type="date"], input[type="text"], select {
     font-weight: 550;
     background-color: #fff9fb;
     transition: all 0.3s ease;
+    text-align: left;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
