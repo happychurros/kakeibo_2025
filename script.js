@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             if (data.status === 'success') {
-                alert('データがスプレッドシートに記録されました！');
+                alert('記録しました！');
                 form.reset();
             } else {
                 throw new Error('データの送信に失敗しました。');
